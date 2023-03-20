@@ -1,0 +1,37 @@
+\documentclass{article}
+
+\begin{document}
+1.2 Many tic-tac-toe positions appear different but are really 
+the same because of symmetries. How might we amend the reinforcement learning 
+algorithm described above to take advantage of this? In what ways would this improve it? Now think 
+again. Suppose the opponent did not take advantage of symmetries. In that case, should we? Is it 
+true. then. that symmetrically equivalent positions 
+should necessarily have the same value?
+
+\textsc{Solution:} To take advantage of symmetries in tic-tac-toe, 
+we could modify the reinforcement learning algorithm described above 
+to use a symmetric board representation. Instead of 
+treating each board state as a unique position, we could consider
+symmetrically equivalent positions as the same position. For example,
+if a board state is rotationally symmetric, we could treat all 
+rotations of that state as the same position. This would reduce 
+the number of unique positions that the algorithm needs to learn 
+and would make the learning process more efficient.
+
+To implement this modification, we could define a function that takes 
+a board state and returns all of its symmetric equivalents. Then, 
+we would update the values for all of these equivalent states 
+together when the algorithm learns from a particular state. This would ensure that the algorithm 
+learns the same value for all equivalent positions, regardless of which position it encounters 
+during gameplay.
+
+If the opponent did not take advantage of symmetries, we could
+still use the modified algorithm to take advantage of them. This would likely improve the 
+algorithm's performance by reducing the number of unique 
+positions that it needs to learn and increasing the efficiency of 
+the learning process. However, it is not necessarily true that 
+symmetrically equivalent positions should always have the same value. In some cases, the optimal move 
+for a given symmetric position may depend on the specific position of
+the opponent's pieces, which could result in different values for 
+symmetrically equivalent positions.
+\end{document}
