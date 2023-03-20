@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\begin{document}
+1.5 Can you think of other ways to improve the reinforcement learning 
+player? Can you think of any better way to solve the 
+tic-tac- toe problem as posed?
+
+\textsc{Solution:} There are several ways to improve the 
+reinforcement learning player in tic-tac-toe, some of which are:
+\begin{enumerate}
+\item Adding more features: The current algorithm only considers 
+the board state when making a move. Adding additional features, 
+such as the number of X's and O's in each row, column, and diagonal, 
+or the number of potential winning lines for each player, could 
+improve the algorithm's ability to evaluate board states and make 
+better decisions.
+
+\item Using more advanced techniques: The current algorithm 
+uses simple tabular Q-learning. More advanced techniques, such as 
+deep reinforcement learning or Monte Carlo tree search, could 
+potentially improve the algorithm's performance by 
+allowing it to learn more complex strategies and explore a wider 
+range of moves.
+
+\item Using human expert knowledge: Incorporating human 
+expert knowledge into the algorithm could improve its 
+performance by providing it with additional insights and 
+strategies. For example, a human expert could provide a set of 
+heuristics that the algorithm could use to guide its 
+decision-making.
+\end{enumerate}
+
+Regarding a better way to solve the tic-tac-toe problem, it is 
+important to note that tic-tac-toe is a relatively simple game with a 
+small search space, and it is possible to solve it using various 
+methods. One approach that could potentially solve tic-tac-toe more 
+efficiently than reinforcement learning is the minimax algorithm 
+with alpha-beta pruning. This algorithm systematically explores 
+all possible moves and uses heuristics to evaluate the value 
+of each move. With alpha-beta pruning, it is possible to 
+eliminate search branches that are guaranteed to lead to worse 
+outcomes, which can significantly reduce the search space and 
+improve performance. However, this algorithm requires a good 
+evaluation function and is less flexible than reinforcement 
+learning, as it cannot learn from experience and adapt to new 
+strategies.
+\end{document}
